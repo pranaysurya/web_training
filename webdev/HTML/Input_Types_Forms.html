@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Color Selection</title>
+<style>
+.Form_Style{
+    background-color: rgb(236, 196, 147);
+    color: red;
+}
+</style>
+
+</head>
+<body>
+
+<div class="Form_Style">
+<form action="/webdev/HTML/Form.html">
+<label for="favcolor">Select your favorite color:</label>
+<input type="color" id="favcolor" name="favcolor" value="">
+<br>
+<br>
+<label for="birthday">Enter your birth-date:</label>
+<input type="date" id="birthday" name="birthday">
+<br>
+<br>
+<label for="email">Enter your email:</label>
+<input type="email" id="email" name="email">
+<br>
+<br>
+<label for="myfile">Select a file:</label>
+<input type="file" name="myfile" id="myfile">
+<br>
+<br>
+<label for="quantity">Select your age:</label>
+<input type="number" id="quantity" name="quantity" min="1" step="2" max="60">
+<br>
+<br>
+<label for="gsearch">Search Google:</label>
+<input type="search" id="gsearch" name="gsearch">
+<br>
+<br>
+<label for="phone">Enter your phone number:</label>
+<input type="tel" name="phone" id="phone"  pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+<br>
+<br>
+<label for="timelocal">Current Date and Time:</label>
+<input type="datetime-local" name="timelocal" id="timelocal">
+<br>
+<br>
+<label for="readonly">First Name:</label>
+<input type="text" name="readonly" id="readonly" value="Dave" readonly>
+<br>
+<br>
+<label for="readonly1">Last Name:</label>
+<input type="text" name="readonly1" id="readonly1" value="Locker" disabled>
+<br>
+<br>
+<label for="myfiles">Select files:</label>
+<input type="file" name="myfiles" id="myfiles" multiple>
+<br>
+<br>
+<input type="submit" value="Submit">
+<input type="reset" value="Reset">
+</form>
+</div>
+
+
+
+</body>
+</html>

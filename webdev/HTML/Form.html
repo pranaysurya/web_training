@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Basic Form</title>
+<style>
+form{
+    border: 2px solid rgb(15, 136, 15);
+    background-color: rgb(157, 252, 186);
+}
+label, p{
+
+    border-radius: 20%;
+    border-collapse: collapse;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+</style>
+</head>
+<body>
+    
+<form>
+    <label for="fname">First Name:</label><br>
+
+    <input type="text" name="fname" id="fname"><br><br>
+
+    <label for="lname">Last Name:</label><br>
+
+    <input type="text" name="lname" id="lname"><br><br>
+
+    <label for="address">Address:</label><br>
+
+    <input type="text" name="address" id="address"><br><br>
+
+    <label for="email">Email:</label><br>
+
+    <input type="email" name="email" id="email"><br><br>
+
+    
+    
+    <label for="card">Type of Card:</label><br>
+        <input type="radio" name="card" id="card" value="">
+        <label for="card">Visa</label>
+
+        <input type="radio" name="card" id="card" value="">
+        <label for="card">Interac</label>
+
+        <input type="radio" name="card" id="card" value="">
+        <label for="card">CIBC</label>
+<br>
+<br>
+        <label for="datetime">Enter current date and time:</label>
+<br>
+        <input type="date" id="datetime" name="datetime">
+        <input type="time" name="datetime" id="datetime">
+<br>
+    <p>Please check if you have the vehicle:</p>
+        <input type="checkbox" name="vehicle_1" id="vehicle_1" value="Bike">
+        <label for="vehicle_1"> Bike</label><br>
+    
+        <input type="checkbox" name="vehicle_2" id="vehicle_2" value="Car">
+        <label for="vehicle_2">Car</label><br>
+    
+        <input type="checkbox" name="vehicle_3" id="vehicle_3" value="Truck">
+        <label for="vehicle_3">Truck</label><br>
+        <br>
+<br>
+<br>
+    <input type="submit" value="Submit">
+
+    <input type="reset" value="Reset">
+    <br>
+</form>
+    
+
+
+</body>
+</html>

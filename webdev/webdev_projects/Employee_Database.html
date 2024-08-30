@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Employee Database</title>
+<style>
+h3{
+    text-align: center;
+    color: black;
+    background-color: rgb(128, 194, 255);
+    margin: 1%;
+    margin-top: 1%;
+}
+</style>
+
+</head>
+<body style="background-color: rgb(188, 222, 253);">
+<h1 style="
+    color: white;
+    background-color: rgb(87, 171, 250);
+    text-align: center;
+    font-size: 50px;
+    margin-top: 0%;
+    margin-bottom: 2%;
+    padding-top: 37px;
+    padding-bottom: 27px;
+    ">Employee Database</h1>
+
+<div>
+<form  style="
+border: 2px solid rgba(128, 128, 128, 0.918);
+background-color: rgb(188, 222, 253);
+width: 48%;
+float: left;
+">
+<h3>Add new employee</h3>
+<br>
+<label for="employerid" style="margin-left: 1%;">Employer ID:</label>
+<input type="tel" name="employerid" id="employerid" pattern="[a-z]{1}[0-9]{7}" placeholder="a1234567"><br><br>
+<label for="name" style="margin-left: 1%;">Name:</label>
+<input type="text" name="name" id="name" placeholder="Tom Cruise"><br><br>
+<input type="reset" value="Reset" style="margin-left: 1%;">
+<input type="submit" value="Submit" style="margin-bottom: 1%;">
+</form>
+
+<form  style="
+border: 2px solid rgba(128, 128, 128, 0.918);
+background-color: rgb(188, 222, 253);
+width: 48%;
+float: right;
+">
+<h3>View an employee</h3>
+<br>
+<label for="employerid" style="margin-left: 1%;">Employer ID:</label>
+<input type="tel" name="employerid" id="employerid" pattern="[a-z]{1}[0-9]{7}" placeholder="a1234567"><br><br>
+<input type="reset" value="Reset" style="margin-left: 1%;">
+<input type="submit" value="Submit" style="margin-bottom: 5.266%;">
+</form>
+</div>
+
+<div>
+<form  style="
+margin-top: 3%;
+border: 2px solid rgba(128, 128, 128, 0.918);
+background-color: rgb(188, 222, 253);
+width: 48%;
+float: left;
+">
+<h3>Update an employee</h3>
+<br>
+<label for="employerid" style="margin-left: 1%;">Employer ID:</label>
+<input type="tel" name="employerid" id="employerid" pattern="[a-z]{1}[0-9]{7}" placeholder="a1234567"><br><br>
+<label for="newname" style="margin-left: 1%;">New Name:</label>
+<input type="text" name="newname" id="newname" placeholder="Maverick"><br><br>
+<input type="reset" value="Reset" style="margin-left: 1%;">
+<input type="submit" value="Submit" style="margin-bottom: 1%;">
+</form>
+
+<form  style="
+margin-top: 3%;
+border: 2px solid rgba(128, 128, 128, 0.918);
+background-color: rgb(188, 222, 253);
+width: 48%;
+float: right;
+">
+<h3>Delete an employee</h3>
+<br>
+<label for="employerid" style="margin-left: 1%;">Employer ID:</label>
+<input type="tel" name="employerid" id="employerid" pattern="[a-z]{1}[0-9]{7}" placeholder="a1234567"><br><br>
+<input type="reset" value="Reset" style="margin-left: 1%;">
+<input type="submit" value="Submit" style="margin-bottom: 5.266%;">
+</form>
+</div>
+
+
+
+</body>
+</html>
