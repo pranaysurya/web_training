@@ -5,23 +5,53 @@
 </head>
 <body>
 <style>
-table, td{
-    border: 3px solid black;
+table, td, th{
+    border: 5px solid black;
+    border-collapse: collapse;
     font-size: 40px;
+    background-color: burlywood;
+    color: aqua;
+    border-radius: 50px;
+    
 }
 </style>
 
 
-<table>
+<table style="width: 40%;">
 <tr>
+    <th style="width: 40%; ", colspan="2">Name</th>
+    <th style="width: 10%; ">Age</th>
+</tr>
+<tr style="height: 70px;">
     <td>Don</td>
-    <td>Ted</td>
-    <td>Hal</td>
+    <td>Green</td>
+    <td>12</td>
+    
 </tr>
 <tr>
-    <td>12</td>
+    <td>Hal</td>
+    <td>Parker</td>
     <td>15</td>
+</tr>
+<tr>    
+    <td>Steve</td>
+    <td>Rogers</td>
     <td>14</td>
+</tr>
+</table>
+
+
+<table>
+<tr>
+    <th>Name</th>
+    <td>Jack</td>
+</tr>
+<tr>
+    <th rowspan="2">Phone</th>
+    <td>647-9838</td>
+</tr>
+<tr>
+    <td>823-3699</td>
 </tr>
 </table>
 
