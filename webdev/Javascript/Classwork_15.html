@@ -1,0 +1,33 @@
+<html>
+<script>
+
+function login(){
+
+var  login = confirm("Confirm Login?");
+
+if (login==true){
+    alert("Login Complete")
+}
+else(alert("Login Canceled"));
+}
+
+
+</script>
+<body>
+
+<form>
+<label for="firstname">First Name: </label>
+<input type="text" name="firstname" id="firstname" required><br><br>
+
+<label for="lastname">Last Name: </label>
+<input type="text" name="lastname" id="lastname" required><br><br>
+
+<label for="password">Password: </label>
+<input type="password" name="password" id="password" required><br><br>
+
+<input type="button" value="Login" onclick="login()">
+
+</form>
+
+</body>
+</html>

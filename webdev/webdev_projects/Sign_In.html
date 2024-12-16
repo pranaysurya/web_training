@@ -1,7 +1,43 @@
 <!DOCTYPE html>
 <html>
 <head>
+
 <style>
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #ffffff;
+}
+
+li {
+  float: left;
+  font-family: Arial, Helvetica, sans-serif;
+  letter-spacing: 2px;
+}
+
+li a {
+  display: block;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+    color: #3ca152;
+}
+
+.navbarright {
+  float: right;
+  font-family: Arial, Helvetica, sans-serif;
+  letter-spacing: 2px;
+  border: 1px solid black;
+  border-radius: 45%;
+}
+
 div{
     margin: auto;
     display: block;
@@ -36,8 +72,20 @@ a:link, a:visited{
 </style>
 </head>
 <body>
-<br><br><br><br>    
+
+
+<ul>
+    <img src="/webdev_projects/Images/Starbucks_Logo.png" style="float: left;">
+    <li><a href="https://www.starbucks.ca/menu"><b>MENU</b></a></li>
+    <li><a href="https://www.starbucks.ca/rewards"><b>REWARDS</b></a></li>
+    <li><a href="https://www.starbucks.ca/gift"><b>GIFT CARDS</b></a></li>
+
+    <li class="navbarright"><a href="/webdev_projects/Sign_In.html" style="float: right;"><b>Sign In</b></a></li>
+    <li class="navbarright"><a href="/webdev_projects/Join_Now.html" style="float: right;"><b>Join Now</b></a></li>
+</ul>
+
 <hr>
+
 <br>
 <h1 style="
     color: black;
