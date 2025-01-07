@@ -21,9 +21,10 @@ p{
 
 }
 
-
 </style>
+
 <script>
+
 
 function displayvalue(btnvalue){
     var current_displayvalue = document.getElementById("userinput").textContent;
@@ -56,8 +57,14 @@ function clearonedigit(){
     document.getElementById("userinput").textContent = current_displayvalue.substring(0,current_displayvalue_len-1);
 }
 
+function displaypercentage(){
+
+
+}
+
 
 </script>
+
 </head>
 <body>
     
@@ -86,7 +93,7 @@ function clearonedigit(){
 <td><button onclick="displayvalue(7)" class="btn btn-dark rounded-pill">7</button></td>
 <td><button onclick="displayvalue(8)" class="btn btn-dark rounded-pill">8</button></td>
 <td><button onclick="displayvalue(9)" class="btn btn-dark rounded-pill">9</button></td>
-<td><button onclick="displayvalue('%')" class="btn btn-dark rounded-pill">%</button></td>
+<td><button onclick="displaypercentage('%')" class="btn btn-dark rounded-pill">%</button></td>
 <td><button onclick="displayvalue('√')" class="btn btn-dark rounded-pill">√</button></td>
 </tr>
 
