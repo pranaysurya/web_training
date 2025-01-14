@@ -12,10 +12,9 @@
 }
 .main{
   display: block;
-  width: 1000px;
+  width: 900px;
   height:400px;
   margin: auto;
-  border: 1px solid red;
 }
 
 .alignitems{
@@ -24,125 +23,230 @@
     border: 2px brown;
 }
 
-ul li{
-    display: inline; list-style-type: none;
-    font-size: 30px;
-    padding: 10px;
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #ffffff;
 }
 
-ul li a:link, ul li a:visited, ul li a:active{   
-    text-decoration: none;
-    color: grey;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+li {
+  float: left;
+  font-family: Arial, Helvetica, sans-serif;
+  letter-spacing: 2px;
 }
 
-ul li a:hover{
-    text-decoration: none;
-    color: rgb(95, 95, 95);
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+li a {
+  display: block;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
 }
+
+li a:hover {
+    color: #3ca152;
+}
+
 
 .drinks{
   margin-right: 200px;
   float: left;
-  display: ;
+  width: 300px;
 }
 
 .drinks4{
   float: right;
 }
 
+
+.container {
+            background-color:white;
+            width: 2000px;
+            height: 300px;
+            object-fit: contain;
+}
+
+.item {
+    float: left;
+     margin: 10px;
+}
+
+
 </style>
 </head>
 <body>
     
-<ul>
-    <li><a href="https://www.starbucks.ca/menu">MENU</a></li>
-    <li><a href="https://www.starbucks.ca/rewards">REWARDS</a></li>
-    <li><a href="https://www.starbucks.ca/gift">GIFT CARDS</a></li>
+  <body>
 
-    <li><a href="/webdev_projects/Sign_In.html" style="float: right; padding-left: 20px; margin-right: 10px;">Sign In</a></li>
-    <li><a href="/webdev_projects/Join_Now.html" style="float: right;">Join Now</a></li>
-    
-</ul>
+    <ul>
+      <img src="/webdev_projects/Images/Starbucks_Logo.png" style="float: left;">
+      <li><a href="https://www.starbucks.ca/menu"><b>MENU</b></a></li>
+      <li><a href="https://www.starbucks.ca/rewards"><b>REWARDS</b></a></li>
+      <li><a href="https://www.starbucks.ca/gift"><b>GIFT CARDS</b></a></li>
+  
+      <li class="navbarright" style="float: right;"><a href="/webdev_projects/Sign_In.html"><b>Sign In</b></a></li>
+      <li class="navbarright" style="float: right;"><a href="/webdev_projects/Join_Now.html"><b>Join Now</b></a></li>
+    </ul>
 
 <hr>
 
+<div style=" width: 150px; height: 650px; margin-left: 10px; float: left;">
+
+<h3>Menu</h3>
+  
+<p>Hot Coffees</p>
+<p>Cold Coffees</p>
+<p>Starbucks Refreshers® Beverages</p>
+<p>Frappuccino® Blended Beverages</p>
+<p>Iced Tea & Lemonade</p>
+<p>Hot Teas</p>
+<p>Milk, Juice & More</p>
+<p>Bottled Beverages</p>
+<h3>Food</h3>
+<p>Breakfast</p>
+<p>Bakery</p>
+<p>Lunch</p>
+<p>Snacks & Sweets</p>
+<p>Oatmeal</p>
+</div>
+
+
 <h1 style="
-    text-indent: 200px;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    width: 90%;
+    float: right;
     "><b>MENU</b></h1>
 
 <h2 style="
-    text-indent: 200px;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    width: 90%; float: right;
     "><b>Drinks</b></h2>
 
-<hr>
+<hr style="width: 90%; float: right;">
 
-<div class="options">
+
 
 <div class="main">
-<div class="drinks">
+<div class="drinks" style="margin-bottom: 10px;">
     <a target="_blank" href="https://www.starbucks.ca/menu/drinks/hot-coffees"><img  class="img" src="/webdev_projects/Images/coffee.png" alt="1" width="75px" height="50px" style="border-radius: 50%;"></a>
     <div class="alignitems"><p class="text"><b>Hot Coffee</b></p></div>
   </div>
-<div class="drinks4">
+<div class="drinks4" style="margin-bottom: 10px;">
 <a target="_blank" href="/webdev_projects/Images/coffee.png"><img class="img" src="/webdev_projects/Images/coffee.png" alt="2" width="75px" height="50px" style="border-radius: 50%;"></a>
 <p  class="text"><b>Starbucks Refreshers®️ Beverages </b></p>
 </div>
-<div class="drinks">
+<div class="drinks" style="margin-bottom: 10px;">
   <a target="_blank" href="https://www.starbucks.ca/menu/drinks/hot-coffees"><img  class="img" src="/webdev_projects/Images/coffee.png" alt="1" width="75px" height="50px" style="border-radius: 50%;"></a>
   <div class="alignitems"><p class="text"><b>Hot Coffee</b></p></div>
 </div>
-<div class="drinks4">
+<div class="drinks4" style="margin-bottom: 10px;">
   <a target="_blank" href="/webdev_projects/Images/coffee.png"><img class="img" src="/webdev_projects/Images/coffee.png" alt="2" width="75px" height="50px" style="border-radius: 50%;"></a>
   <p  class="text"><b>Starbucks Refreshers®️ Beverages </b></p>
   </div>
-<div class="drinks">
+<div class="drinks" style="margin-bottom: 10px;">
     <a target="_blank" href="https://www.starbucks.ca/menu/drinks/hot-coffees"><img  class="img" src="/webdev_projects/Images/coffee.png" alt="1" width="75px" height="50px" style="border-radius: 50%;"></a>
     <div class="alignitems"><p class="text"><b>Hot Coffee</b></p></div>
   </div>
-<div class="drinks4">
+<div class="drinks4" style="margin-bottom: 10px;">
 <a target="_blank" href="/webdev_projects/Images/coffee.png"><img class="img" src="/webdev_projects/Images/coffee.png" alt="2" width="75px" height="50px" style="border-radius: 50%;"></a>
 <p  class="text"><b>Starbucks Refreshers®️ Beverages </b></p>
 </div>
-<div class="drinks">
+<div class="drinks" style="margin-bottom: 10px;">
     <a target="_blank" href="https://www.starbucks.ca/menu/drinks/hot-coffees"><img  class="img" src="/webdev_projects/Images/coffee.png" alt="1" width="75px" height="50px" style="border-radius: 50%;"></a>
     <div class="alignitems"><p class="text"><b>Hot Coffee</b></p></div>
   </div>
-<div class="drinks4">
+<div class="drinks4" style="margin-bottom: 10px;">
 <a target="_blank" href="/webdev_projects/Images/coffee.png"><img class="img" src="/webdev_projects/Images/coffee.png" alt="2" width="75px" height="50px" style="border-radius: 50%;"></a>
 <p  class="text"><b>Starbucks Refreshers®️ Beverages </b></p>
 </div>
 </div>
 <br>
 
-<hr>
-<h3>Food</h3>
-<hr>
+<hr style="width: 90%; float: right;">
+<h3 style="width: 90%; float: right;">Food</h3>
+<hr style="width: 90%; float: right;">
 <div class="main" >
-  <div class="drinks">
+  <div class="drinks" style="margin-bottom: 10px;">
       <a target="_blank" href="https://www.starbucks.ca/menu/drinks/hot-coffees"><img  class="img" src="/webdev_projects/Images/coffee.png" alt="1" width="75px" height="50px" style="border-radius: 50%;"></a>
       <div class="alignitems"><p class="text"><b>Hot Coffee</b></p></div>
     </div>
-  <div class="drinks4">
+  <div class="drinks4" style="margin-bottom: 10px;">
   <a target="_blank" href="/webdev_projects/Images/coffee.png"><img class="img" src="/webdev_projects/Images/coffee.png" alt="2" width="75px" height="50px" style="border-radius: 50%;"></a>
   <p  class="text"><b>Starbucks Refreshers®️ Beverages </b></p>
   </div>
-  <div class="drinks">
+  <div class="drinks" style="margin-bottom: 10px;">
     <a target="_blank" href="https://www.starbucks.ca/menu/drinks/hot-coffees"><img  class="img" src="/webdev_projects/Images/coffee.png" alt="1" width="75px" height="50px" style="border-radius: 50%;"></a>
     <div class="alignitems"><p class="text"><b>Hot Coffee</b></p></div>
   </div>
-  <div class="drinks4">
+  <div class="drinks4" style="margin-bottom: 10px;">
     <a target="_blank" href="/webdev_projects/Images/coffee.png"><img class="img" src="/webdev_projects/Images/coffee.png" alt="2" width="75px" height="50px" style="border-radius: 50%;"></a>
     <p  class="text"><b>Starbucks Refreshers®️ Beverages </b></p>
     </div>
-  <div class="drinks">
+  <div class="drinks" style="margin-bottom: 10px;">
       <a target="_blank" href="https://www.starbucks.ca/menu/drinks/hot-coffees"><img  class="img" src="/webdev_projects/Images/coffee.png" alt="1" width="75px" height="50px" style="border-radius: 50%;"></a>
       <div class="alignitems"><p class="text"><b>Hot Coffee</b></p></div>
     </div>
 </div>
+
+<div class="container">
+  <div class="item">
+  <h2>About Starbucks</h2>
+  <p>Our Company</p>
+  <p>Our Coffee</p>
+  <p>Stories and News</p>
+  <p>Investors Relations</p>
+  <p>Customer Service</p>
+  </div>
+  <div class="item">
+  <h2>Careers</h2>
+  <p>Culture and Values</p>
+  <p>Diversity and Inclusion</p>
+  <p>Work at Starbucks</p>
+  <p>Corporate Careers</p>
+  <p>Retail Careers</p>
+  </div>
+  <div class="item">
+  <h2>Social Impact</h2>
+  <p>Overview</p>
+  <p>People</p>
+  <p>Planet</p>
+  <p>Environmental and Social Impact Reporting</p>
+  </div>
+  <div class="item">
+  <h2>For Business Partners</h2>
+  <p>Landlord Support Centers</p>
+  <p>Corporate Gift Card Sales</p>
+  <p>Branded Solutions</p>
+  </div>
+  <div class="item">
+  <h2>Order and Pickup</h2>
+  <p>Order on the App</p>
+  <p>Order on the Web</p>
+  <p>Delivery</p>
+  <p>Order and Pickup Options</p>
+  </div>
+  </div>
+  <hr>
+
+  <div class="message">
+    <a href="https://www.facebook.com/starbuckscanada"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMwAAADACAMAAAB/Pny7AAAAZlBMVEU7V53///82U5vw8vdSaabO0+Q5VZwrTZnd4ezs7/VRZ6XAx9xGYKGCkLqlr835+fwgRpZacKqWocVvgbNkeK5AW58RPZKNmsHj5/DIzeC4wNewudQbQpR6i7hedKzV2ucAMI2dqcuy8G1tAAADWklEQVR4nO3d2ZKiMACF4XTAhFVQRBYXxvd/ydHpm6lqmQBjyAl1/nuq+AohkoCKQiuxiZQuRHd2vRef6pyKXLveiU+lc3GQrnfiU8mD6z1gjDHGGGOMMcbYpJSU+l3ylfJpRuzpkNm9uuXN8bumyfP8drtVp9MhzGqly9KPuRddynu+77uhjYPi67viWRDEbRsNw65L+8v+GLreT3OqlNW+i+IvYzf0QyOv2XHXFmbJsxwcc60v8TQJPEZf91Mh6Bh1vU0+KOAYJbN0FgUYI2XVzrTAYqRoJlyL/cBI8QhmW0AxSj7mnfrIGH1cYsHElDMvycgYWS+zIGLUr2iZBRFzfSy0AGL0YeGHDBKzW2rBw+h8wWgJipGiW2yBw+h8/lcyWIzsl1vQMPq0dIwBxJTLvpRBYtTsm0tgjJ5/dwmMaf7HAoZRM2aWih9hYWQybcQs4miX9vsf3V0D/k7ep5wywW5fZbp8E9KBEbKacGEemqzUULv9PpmbLWmIdQDGUvJotmS+PJpcX0yW6OCLRdXG8b+Rvixdysx0kxndvThfXsnEdGW++LOmrIyYoy9nzOvIGO4yA4/espChAdNWPmEMEzPRyZvz34wZPHr/xYjZhcQ4iRjUiEGNGNSIQY0Y1IhBjRjUiEHNR4waSchkAmZsa0fTg+9fgnlWZiZMVo5t+2p9jqr3bTTWvy1fxeiGr4Zq9Q/h/OfIpxavP0VoDzOsv0RgD9MlG8L09YYwl/WvZvYwj/WXCKxhimZDmNjBSpQ1jIuVKGsYB8OMPUyXbehqljq4PbCG6cvtYIrHhjBBsyFMfHPwjIAtTOviGQFbmGH9GwB7mJ2LJ9FsYVIH5781TH/dDsbJMGML42SYsYVxMM9kD9M6mYa2hImEi7lmS5jBxSljC5O6uDLbwlycYFTWB/FYhjdOitENYwfzTH/KwmSkk2l95pS83zYMazeW12+uvU8bV84SPbatI8t4Pq5pjkYMasSgRgxqxKBGDGrEoEYMasSgRgxqxKBGDGrEoEYMasSgRgxqxKBGDGrEoEYMasSgRgxqxKBGDGrEoEYMasSgRgxqxKBGDGrEoEYMasSgRsyMlFjxTxIsY+RBrPhzTpYxOhfd+WM7a8oy5pyKYr2fp7SLUbr4DYruSaKA7bBPAAAAAElFTkSuQmCC" alt="Facebook" width="50px" style="object-fit: contain;"></a>
+    <a href="https://www.instagram.com/starbuckscanada"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Instagram_logo_2022.svg/640px-Instagram_logo_2022.svg.png" alt="Facebook" width="50px" style="object-fit: contain;"></a>
+    <a href="https://twitter.com/starbuckscanada"><img src="https://img.freepik.com/free-vector/new-2023-twitter-logo-x-icon-design_1017-45418.jpg?size=338&ext=jpg&ga=GA1.1.2008272138.1726012800&semt=ais_hybrid" alt="Facebook" width="50px" style="object-fit: contain;"></a>
+    </div>
+    
+    <h4>Privacy Notice
+        |
+        Terms of Use
+        |
+        Do Not Share My Personal Information
+        |
+        Partners
+        |
+        Accessibility</h4>
+    <h5>© 2024 Starbucks Coffee Company. All rights reserved.</h5>
+    
 
 
 </body>
