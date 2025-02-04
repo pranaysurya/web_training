@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>innerHTML Example</title>
+</head>
+<body>
+
+    <button onclick="showContent()">What is my name?</button>
+    <div id="content">
+    </div>
+    <script>
+        function showContent() {
+            // Get the innerHTML of the 'content' div
+            var data = "<h1>My name is Pranay!</h1><p>I like Soccer</p><p>I feel Happy</p><h3>Ilke to eat food</h3>"
+
+            document.getElementById("content").innerHTML = data;
+
+        }
+    </script>
+</body>
+</html>

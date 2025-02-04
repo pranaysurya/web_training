@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>innerHTML Example</title>
+
+<script>
+
+function toggleon(){
+
+document.getElementById("comment").innerHTML = '<form action=""><label for="name">Name:</label><br><input type="text" id="name"><br><br><label for="cmt">Comments:</label><br><textarea id="cmt" cols="30" rows="10"></textarea><br><br><button onclick="toggleoff()">Submit</button></form>';
+
+}
+
+function toggleoff(){
+
+document.getElementById("comment").innerHTML = "";
+
+}
+
+</script>
+</head>
+<body>
+
+<button onclick="toggleon()">Toggle Comment</button><br><br><br>
+
+<div id="comment">
+
+<form action="">
+
+<label for="name">Name:</label><br>
+<input type="text" id="name"><br><br>
+
+
+<label for="cmt">Comments:</label><br>
+<textarea id="cmt" cols="30" rows="10"></textarea><br><br>
+
+<button onclick="toggleoff()">Submit</button>
+
+</form>
+
+</div>
+
+
+
+
+
+
+
+
+
+</body>
+</html>

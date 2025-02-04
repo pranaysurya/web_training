@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Submit Form Example</title>
+</head>
+<body>
+    <h2>Enter your name</h2>
+    <!-- Form with input field and submit button -->
+    <form id="nameForm">
+        <label for="username">Name:</label>
+        <input type="text" id="username" name="username" required>
+        <button type="button" onclick="submitName()">Submit</button>
+    </form>
+    <p id="result"></p>
+    <script>
+        function submitName() {
+            // Get the value entered by the user
+            const name = document.getElementById("username").value;
+// Check if name is not empty
+            if (name !== "") {
+                // Display the submitted name or do any other processing here
+                document.getElementById("result").innerText = "Hello, " + name + "! Your data has been submitted.";
+            } else {
+                // If no name entered, show an alert
+                alert("Please enter your name!");
+            }
+        }
+    </script>
+</body>
+</html

@@ -1,0 +1,17 @@
+#main{
+    border: 1px solid red;
+    margin-top: 300px;
+    width: 40%;
+    height: 400px;
+}
+
+#todoheader{
+    text-align: center;
+}
+
+#displaydiv{
+
+    display: none;
+
+
+}
