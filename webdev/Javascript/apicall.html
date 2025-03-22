@@ -1,0 +1,23 @@
+<html>
+
+<script>
+const url = 'http://localhost:9000/';
+
+fetch(url)
+  .then(response => response.json()) // Parse JSON response data
+  .then(data => {
+    console.log(data); // Log the list of users
+    document.getElementById("t1").innerText= data;
+  })
+  .catch(error => {
+    console.error(error); // Handle any errors
+  }); 
+ </script>
+
+<body>
+Test 
+
+<span id="t1"></span>   
+
+</body>
+</html>

@@ -9,5 +9,3 @@ print(type(o))
 print(type(u))
 
 
-print(u+i)
-

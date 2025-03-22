@@ -1,0 +1,45 @@
+<html>
+<head>
+<script>
+
+function DusaYobi(){
+
+    var a =  prompt("What are the sizes of the Yobis? (You can provide any order, but put a space after the number)");
+
+    var b = (a.split(' '));
+    alert(b.length);
+    
+
+    for (i=0; i<b.length; i++){
+        data = document.getElementById("content").innerHTML;
+        document.getElementById("content").innerHTML = data + b[i] + "<br><br>";
+
+    }
+
+    var dusasize = b[0];
+
+    var o = 0;
+
+    while (dusasize > b[o+1]){
+        if (dusasize > b[o+1]){
+            new dusasize += b[o+1];
+            o++;
+        }
+        else{
+            alert(dusasize);
+            }
+        }
+
+
+}
+</script>
+</head>
+<body>
+
+<button onclick="DusaYobi()">Run Program</button>
+
+<p id="content"></p>
+
+<br>
+</body>
+</html>

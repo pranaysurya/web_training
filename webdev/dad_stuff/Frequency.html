@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script>
+        function countLetters() {
+
+            var name = prompt("Please enter your name:");
+
+            var lettersOnly = name.replace(/\s/g, "").toLowerCase();
+            
+            var letterCounts = {};
+
+            for (var i = 0; i < lettersOnly.length; i++) {
+                var letter = lettersOnly[i];
+
+                if (letterCounts[letter]) {
+                    letterCounts[letter]++;
+                } else {
+
+                    letterCounts[letter] = 1;
+                }
+            }
+
+            var result = "The name contains the following letters and frequencies:\n";
+            for (var letter in letterCounts) {
+                result += letter + ": " + letterCounts[letter] + "\n";
+            }
+
+            alert(result);
+        }
+    </script>
+</head>
+<body>
+    <button onclick="countLetters()">Click to Count Letters</button>
+</body>
+</html>

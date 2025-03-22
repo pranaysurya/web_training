@@ -1,0 +1,39 @@
+<script>
+function bronze_score_length(bronzescore){
+    var counter = 0;
+    for (i in scores){
+
+        if (scores[i] === bronzescore){
+           counter++;
+            
+        }
+    }
+    return counter;
+}
+
+function bronzecount(scores) {
+
+    let unique_scores = [...new Set(scores)].sort((a, b) => b - a);
+
+    if (unique_scores.length < 3) {
+        return "Not enough distinct scores for Bronze level";
+    }
+    
+    let bronzescore = unique_scores[2];
+    
+    // let bronze_number = scores.filter(score => score === bronzescore).length;
+    
+    let bronze_number = bronze_score_length(bronzescore);
+    
+    return {
+        bronzescore: bronzescore,
+        bronze_number: bronze_number
+    }
+}
+
+const scores = [4, 70, 62, 58, 73];
+const result = bronzecount(scores);
+
+document.write('Bronze Score: ' + result.bronzescore + ', Participants with Bronze: '+ result.bronze_number);
+
+</script>

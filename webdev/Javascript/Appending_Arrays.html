@@ -1,0 +1,71 @@
+<script>
+
+    
+var fruits = ["apple", "banana", "orange"];
+
+fruits[0] = "mango"; // Gets the arrray's index and changes it
+
+console.log(fruits[1]); // Gets the array's index and displaying it in the console
+
+for (i=0; i<fruits.length; i++){
+    document.write(fruits[i] + "<br>");
+    
+}
+
+document.write("<br>");
+
+var arr1 = ["Hello", "Bye", "Good Morning"];
+var arr2 = ["Apple", "Banana", "Pineapple"];
+
+var result = arr1.concat(arr2); // combines the two arrays using the concat() function
+document.writeln(result); // writeln() prints the arrays in a new line
+
+document.write("<br>");
+
+var arr3 = ["Burger", "Ice Cream", "Donut"];
+
+var arrgroup = arr1.concat(arr2,arr3);
+
+var arrayinarray = [arr1, arr2, arr3]; // arrays in arrays
+
+document.write("<br>");
+
+document.writeln(arrgroup);
+
+document.write("<br>");
+
+document.write(arrayinarray);
+
+
+document.write("<br>");
+document.write("<br>");
+
+var marks = [12,23,34,45,56,67,78];
+
+function high(value){
+
+    return value > 40;
+
+}
+
+function low(value){
+
+    return value < 40;
+
+}
+
+
+document.write(marks.filter(high));
+document.write("<br>");
+document.write("<br>");
+document.write(marks.filter(low));
+document.write("<br>");
+document.write("<br>");
+
+var functionsarray = [high, low];
+W
+functionsarray[1] = "";
+
+document.write(functionsarray);
+
+</script>
