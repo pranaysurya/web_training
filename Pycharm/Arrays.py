@@ -19,6 +19,7 @@ c = arr.array("d", [1.1, 2.2, 3.3])
 
 print(c)
 c.insert(0, 3.2)
+
 count = 0
 
 while  count < len(c):
@@ -32,5 +33,5 @@ while  count < len(c):
     
 
 for loc, val in enumerate(c):
-    print(f"Index: {loc} Value: {val}")
+    print(f"Index: {loc} Value: {val} ")
 
