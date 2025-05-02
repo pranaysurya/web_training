@@ -2,8 +2,6 @@ print("Add")
 print("Subtract")
 print("Multiply")
 print("Divide")
-
-
 sel = input("Choose your option:")
 
 number1 = int(input("enter number 1:"))

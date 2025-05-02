@@ -52,14 +52,19 @@ def select():
     global running
 
     choice = input("Enter your corresponding choice (1-5): ")
+    print (len(choice))
+    if len(choice) != 0:
+        if choice == 5:
+            print ("\n")
+            print ("Exiting the calculator. Goodbye!")
+            running = False
 
-    if choice == 5:
-        print ("\n")
-        print ("Exiting the calculator. Goodbye!")
-        running = False
+        else:
+            calculate(int(choice))
 
     else:
-        calculate(int(choice))
+        print ("There is no value to the choice")
+        select()
 
 
 while running:

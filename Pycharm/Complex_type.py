@@ -1,4 +1,4 @@
-x = 23 +5j
+# x = 23 +5j
 
-print(x)
-print(type(x))
+# print(x)
+# print(type(x))
