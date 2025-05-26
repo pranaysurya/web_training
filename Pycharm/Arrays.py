@@ -22,16 +22,23 @@ c.insert(0, 3.2)
 
 count = 0
 
-while  count < len(c):
+# while  count < len(c):
 
-    print(c[count])
+#     print(c[count])
 
-    if count == len(c):
-        break
+#     if count == len(c):
+#         break
 
-    count += 1
+#     count += 1
     
 
 for loc, val in enumerate(c):
-    print(f"Index: {loc} Value: {val} ")
+    print(f"Index: {loc} Value: {val}")
+
+d = arr.array("i", [1,2,3,4])
+
+for i in d:
+    c.pop([i-1])
+    print(i)
+
 
