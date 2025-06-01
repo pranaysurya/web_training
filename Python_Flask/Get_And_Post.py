@@ -1,6 +1,6 @@
 from flask import Flask, request, render_template
 
-app = Flask(__name__, template_folder="Files")
+app = Flask(__name__, template_folder="Html_Files")
 
 @app.route('/square', methods=['GET'])
 def squarenumber():
